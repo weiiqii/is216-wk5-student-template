@@ -25,6 +25,6 @@ const addItem = () => {
         </li>
     </ul>
     <br>
-    <input v-model="text" />
+    <input v-model="text" @keyup.enter="addItem"/>
     <button @click="addItem">Add</button>
 </template>
