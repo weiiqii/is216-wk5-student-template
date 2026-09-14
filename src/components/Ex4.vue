@@ -22,6 +22,7 @@ const addItem = () => {
         <li v-for="(item, index) in items" :key="item">
             {{ item }}
             <button @click="removeItem(index)">Delete!</button>
+            <!-- <button @click="items.splice(index)">Delete!</button> -->
         </li>
     </ul>
     <br>
